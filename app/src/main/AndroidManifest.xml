@@ -11,13 +11,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Controller.InputActivity"></activity>
         <activity android:name=".Controller.FireAlarmActivity" />
-        <activity android:name=".Controller.MessageActivity" />
-        <activity android:name=".Controller.MainActivity">
+        <activity android:name=".Controller.MessageActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Controller.MainActivity">
+
         </activity>
     </application>
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SmartFireDetect</string>
+    <string name="employee_status">employee status</string>
 </resources>

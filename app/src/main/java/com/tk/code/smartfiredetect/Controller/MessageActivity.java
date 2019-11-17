@@ -20,7 +20,7 @@ public class MessageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_message);
+        setContentView(R.layout.company_employees);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
@@ -32,15 +32,12 @@ public class MessageActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(rLayoutManager);
 
         // copy to ArrayList
-        final List<String> iName = new ArrayList<String>(Arrays.asList(sampleData.names));
+        final List<String> iName = new ArrayList<>(Arrays.asList(sampleData.names));
 
-        final List<Boolean> iSOSs = new ArrayList<Boolean>(Arrays.asList(sampleData.isSOS));
-
+        final List<Integer> intSOSs = new ArrayList<>(Arrays.asList(sampleData.intSOS));
 
         // specify an adapter
-        final RecyclerView.Adapter rAdapter = new MyAdapter(iNames,  iSOSs);
+        final RecyclerView.Adapter rAdapter = new MyAdapter(iName,  intSOSs);
         recyclerView.setAdapter(rAdapter);
-
-
     }
 }
